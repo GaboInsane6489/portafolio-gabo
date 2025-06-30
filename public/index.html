@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/4300/4300445.png" type="image/png">
+</head>
+<body>
+    <div id="notificaciones" class="notificaciones-container"></div>
+
+    <audio id="clickSound" src="Sounds/click-tap-computer-mouse-352734.mp3" preload="auto"></audio>
+    <audio id="sonidoOla" src="Sounds/swoosh-06-351021.mp3" preload="auto"></audio>
+    <audio id="hoverSound" src="Sounds/mixkit-cool-interface-click-tone-2568.wav" preload="auto"></audio>
+    
+    <canvas id="fondo-animado"></canvas>
+    
+    <div id="loader-terminal">
+            <pre>
+                Iniciando portafolio...
+                Conectando con backend de Gabo...
+                Cargando habilidades ███████░ 90%
+                ¡Bienvenido!
+            </pre>
+        </div>
+
+    <!-- INICIO -->
+<Section id="inicio">
+    <header class="hero">
+
+        <!-- NAVEGACIÓN PRINCIPAL -->
+    <nav class="navbar" id="inicio">
+        <ul class="nav-menu">
+            <li><a class="nav-link click-feedback-brillante"  href="#inicio" data-i18n="inicio"></a></li>
+            <li><a class="nav-link click-feedback-brillante"  href="#sobreMi" data-i18n="sobreMi"></a></li>
+            <li><a class="nav-link click-feedback-brillante"  href="#habilidades" data-i18n="habilidades"></a></li>
+            <li><a class="nav-link click-feedback-brillante"  href="#experiencia" data-i18n="experiencia"></a></li>
+            <li><a class="nav-link click-feedback-brillante"  href="#proyectos" data-i18n="proyectos"></a></li>
+            <li><a class="nav-link click-feedback-brillante"  href="#contacto" data-i18n="contacto"></a></li>
+        </ul>
+    </nav>
+
+        <!-- Controles superiores -->
+    <div class="top-controls">
+        <button id="btnIdioma" class="control-btn click-feedback-brillante">🌐 English</button>
+        <button id="btnTema" class="control-btn click-feedback-brillante">🌙 Modo oscuro</button>
+    </div>
+        <div class="hero-content">
+            <div id="sobreMi">
+            <h1 data-i18n="saludo"></h1>
+            <img src="https://media.licdn.com/dms/image/v2/D4D03AQEIczU-cTKBfw/profile-displayphoto-shrink_800_800/B4DZdM4reiGUAg-/0/1749341616748?e=1756944000&v=beta&t=Rg65DtV8QRS_YAX4bwUfhd0gJPOlLjLZ-R3ZOZMVlqY" alt="Foto de Gabo" class="pulso">
+            <h2 data-i18n="sobreMiPrincipal"></h2>
+            <h3 data-i18n="sobreMi"></h3>
+            <p data-i18n="descripcionSobreMi"></p>
+
+            <div class="social-icons">
+                <a href="https://github.com/GaboInsane6489" target="_blank" aria-label="GitHub" class="icono-social click-feedback-brillante">
+                <!-- SVG de GitHub aquí -->
+                <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+                    <title>github [#142]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#000000"> <g id="icons" transform="translate(56.000000, 160.000000)"> 
+                    <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"> 
+                    </path> </g> </g> </g> </g></svg>
+                <!-- Pega el SVG completo de GitHub dentro -->
+                </a>
+                <a href="https://www.linkedin.com/in/gabriel-alexander-gonzalez-garcia-31476636a/" target="_blank" aria-label="LinkedIn" class="icono-social">
+                <!-- SVG de LinkedIn aquí -->
+                <svg fill="currentColor" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>linkedin</title> 
+                    <path d="M28.778 1.004h-25.56c-0.008-0-0.017-0-0.027-0-1.199 0-2.172 0.964-2.186 2.159v25.672c0.014 1.196 0.987 2.161 2.186 2.161 0.010 0 0.019-0 0.029-0h25.555c0.008 0 0.018 0 0.028 0 1.2 0 2.175-0.963 2.194-2.159l0-0.002v-25.67c-0.019-1.197-0.994-2.161-2.195-2.161-0.010 0-0.019 0-0.029 0h0.001zM9.9 26.562h-4.454v-14.311h4.454zM7.674 10.293c-1.425 0-2.579-1.155-2.579-2.579s1.155-2.579 2.579-2.579c1.424 0 2.579 1.154 2.579 2.578v0c0 0.001 0 0.002 0 0.004 0 1.423-1.154 2.577-2.577 2.577-0.001 0-0.002 0-0.003 0h0zM26.556 26.562h-4.441v-6.959c0-1.66-0.034-3.795-2.314-3.795-2.316 0-2.669 1.806-2.669 3.673v7.082h-4.441v-14.311h4.266v1.951h0.058c0.828-1.395 2.326-2.315 4.039-2.315 0.061 0 0.121 0.001 0.181 0.003l-0.009-0c4.5 0 5.332 2.962 5.332 6.817v7.855z">
+                    </path> </g></svg>
+                </a>
+                <a href="https://discord.com/users/585113598624530445" target="_blank" aria-label="Discord" class="icono-social">
+                <!-- SVG de Discord aquí -->
+                <svg fill="currentColor" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> 
+                    <path d="M26.964 0c1.875 0 3.385 1.516 3.474 3.302v28.698l-3.568-3.031-1.958-1.781-2.141-1.865 0.891 2.938h-18.714c-1.87 0-3.385-1.417-3.385-3.302v-21.651c0-1.786 1.516-3.302 3.391-3.302h22zM18.807 7.578h-0.042l-0.271 0.266c2.766 0.802 4.104 2.052 4.104 2.052-1.781-0.891-3.391-1.339-4.995-1.521-1.156-0.177-2.318-0.083-3.297 0h-0.271c-0.625 0-1.958 0.271-3.745 0.984-0.62 0.271-0.979 0.448-0.979 0.448s1.333-1.339 4.281-2.052l-0.182-0.177c0 0-2.229-0.089-4.635 1.693 0 0-2.406 4.193-2.406 9.359 0 0 1.333 2.318 4.99 2.406 0 0 0.536-0.708 1.073-1.333-2.052-0.625-2.854-1.875-2.854-1.875s0.182 0.089 0.448 0.266h0.078c0.042 0 0.063 0.021 0.083 0.042v0.010c0.021 0.021 0.042 0.036 0.078 0.036 0.443 0.182 0.88 0.359 1.24 0.536 0.625 0.266 1.422 0.536 2.401 0.714 1.24 0.182 2.661 0.266 4.281 0 0.797-0.182 1.599-0.354 2.401-0.714 0.516-0.266 1.156-0.531 1.859-0.984 0 0-0.797 1.25-2.938 1.875 0.438 0.62 1.057 1.333 1.057 1.333 3.661-0.083 5.083-2.401 5.161-2.302 0-5.161-2.422-9.359-2.422-9.359-2.177-1.62-4.219-1.682-4.578-1.682l0.073-0.026zM19.031 13.464c0.938 0 1.693 0.797 1.693 1.776 0 0.99-0.76 1.786-1.693 1.786-0.938 0-1.693-0.797-1.693-1.776 0-0.99 0.76-1.786 1.693-1.786zM12.974 13.464c0.932 0 1.688 0.797 1.688 1.776 0 0.99-0.76 1.786-1.693 1.786-0.938 0-1.698-0.797-1.698-1.776 0-0.99 0.76-1.786 1.698-1.786z">
+                    </path> </g></svg>
+                </a>
+            </div>
+
+            <!-- Botón de contacto -->
+        <div class="email-container">
+            <!-- Icono + etiqueta -->
+            <div class="label">
+                <svg alt="email icon" fill="currentColor" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1920 428.266v1189.54l-464.16-580.146-88.203 70.585 468.679 585.904H83.684l468.679-585.904-88.202-70.585L0 1617.805V428.265l959.944 832.441L1920 428.266ZM1919.932 226v52.627l-959.943 832.44L.045 278.628V226h1919.887Z" fill-rule="evenodd" />
+                </svg>
+                <span>Email</span>
+            </div>
+
+            <!-- Input de correo -->
+            <input type="text" class="email-search" value="gabrielgg2005ve@gmail.com" readonly />
+
+            <!-- Botón Enviar (para abrir opciones) -->
+            <button class="btn-send">
+                <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.3009 13.6949L20.102 3.89742M10.5795 14.1355L12.8019 18.5804C13.339 19.6545 13.6075 20.1916 13.9458 20.3356C14.2394 20.4606 14.575 20.4379 14.8492 20.2747C15.1651 20.0866 15.3591 19.5183 15.7472 18.3818L19.9463 6.08434C20.2845 5.09409 20.4535 4.59896 20.3378 4.27142C20.2371 3.98648 20.013 3.76234 19.7281 3.66167C19.4005 3.54595 18.9054 3.71502 17.9151 4.05315L5.61763 8.2523C4.48114 8.64037 3.91289 8.83441 3.72478 9.15032C3.56153 9.42447 3.53891 9.76007 3.66389 10.0536C3.80791 10.3919 4.34498 10.6605 5.41912 11.1975L9.86397 13.42C10.041 13.5085 10.1295 13.5527 10.2061 13.6118C10.2742 13.6643 10.3352 13.7253 10.3876 13.7933C10.4468 13.87 10.491 13.9585 10.5795 14.1355Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+
+            <!-- Botón Copiar -->
+            <button class="btn-copy">
+                <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.0998 2H12.8998C9.81668 2 8.37074 3.09409 8.06951 5.73901C8.00649 6.29235 8.46476 6.75 9.02167 6.75H11.0998C15.2998 6.75 17.2498 8.7 17.2498 12.9V14.9781C17.2498 15.535 17.7074 15.9933 18.2608 15.9303C20.9057 15.629 21.9998 14.1831 21.9998 11.1V6.9C21.9998 3.4 20.5998 2 17.0998 2Z" fill="#292D32"/>
+                    <path d="M11.1 8H6.9C3.4 8 2 9.4 2 12.9V17.1C2 20.6 3.4 22 6.9 22H11.1C14.6 22 16 20.6 16 17.1V12.9C16 9.4 14.6 8 11.1 8ZM12.29 13.65L8.58 17.36C8.44 17.5 8.26 17.57 8.07 17.57C7.88 17.57 7.7 17.5 7.56 17.36L5.7 15.5C5.42 15.22 5.42 14.77 5.7 14.49C5.98 14.21 6.43 14.21 6.71 14.49L8.06 15.84L11.27 12.63C11.55 12.35 12 12.35 12.28 12.63C12.56 12.91 12.57 13.37 12.29 13.65Z" fill="#292D32"/>
+                </svg>
+            </button>
+
+            <!-- Panel flotante de opciones -->
+            <div class="email-options hidden" id="emailOptions">
+                <button class="opt-gmail">Abrir Gmail</button>
+                <button class="opt-mailto">Abrir cliente por defecto</button>
+                <button class="opt-copy-msg">Copiar mensaje predefinido</button>
+            </div>
+        </div>
+
+        <a href="assets/cv/GabrielGonzalez-CV.pdf" download class="btn-cv">
+            📄 Descargar CV
+        </a>
+
+            </div>
+
+            <div class="Tech-titule">
+                <h2 data-i18n="TecnologíasTitulo"></h2>
+            </div>
+            <div class="tech-icons">
+                
+                    <svg alt="HTML5" title="HTML5" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="c133de6af664cd4f011a55de6b000d0b"> 
+                        <path display="inline" d="M108.669,0.501h23.032v22.756h21.069V0.501h23.034V69.41h-23.032V46.334h-21.069V69.41h-23.032V0.501 H108.669z M206.091,23.353h-20.275V0.501h63.594v22.852h-20.285V69.41h-23.032V23.353H206.091z M259.502,0.501h24.02l14.771,24.213 l14.759-24.213h24.023V69.41h-22.938V35.256l-15.845,24.5h-0.395l-15.856-24.5V69.41h-22.539V0.501z M348.54,0.501h23.038v46.133 h32.391V69.41H348.54V0.501z M74.987,100.926l32.946,369.533l147.844,41.04L404.031,470.4l32.981-369.475H74.987z M368.289,188.62 l-2.063,22.977l-0.906,10.188h-0.149H256h-0.158h-63.956l4.142,46.407h59.814H256h92.98h12.214l-1.106,12.172l-10.65,119.32 l-0.682,7.652L256,433.045v0.008l-0.208,0.059l-92.839-25.774l-6.351-71.161h20.97h24.527l3.227,36.146l50.474,13.632l0.042-0.013 v-0.004l50.551-13.64l5.257-58.781H256h-0.158H154.578L143.439,188.62l-1.085-12.157h113.488H256h113.374L368.289,188.62z"> </path> 
+                        </g> 
+                        </g>
+                    </svg>
+                    <svg alt="CSS3" title="CSS3"  fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="c133de6af664cd4f011a55de6b001a2b"> 
+                        <path display="inline" d="M204.064,46.682v22.018h-56.302V0.501h56.302v24.13h-32.172v22.051H204.064z M261.941,24.631h22.492 V0.501h-56.308c0,0,0,12.112,0,24.13c7.533,7.533,11.461,11.139,22.356,22.034c-6.369,0-22.356,0.022-22.356,0.021v22.014h56.308 V46.682L261.941,24.631z M341.746,24.631h22.49V0.501H307.93c0,0,0,12.112,0,24.13c7.531,7.533,11.461,11.139,22.355,22.034 c-6.365,0-22.355,0.022-22.355,0.021v22.014h56.307V46.682L341.746,24.631z M438.395,101.112l-34.203,370.486l-148.193,39.9 l-148.196-39.9L73.605,101.112H438.395z M369.477,176.444H255.865h-115.62l5.529,44.739h110.091h6.184l-6.184,2.574 l-106.067,44.177l3.518,43.73l102.549,0.333l54.963,0.175l-3.521,58.311l-51.442,14.484v-0.046l-0.422,0.116l-49.684-12.542 l-3.015-36.195h-0.164h-46.085h-0.162l6.032,69.876l93.5,27.649v-0.05l0.168,0.05l93-27.146L361.1,267.935H255.865h-0.26 l0.26-0.112l109.086-46.639L369.477,176.444z"> 
+                        </path> 
+                        </g> 
+                        </g>
+                    </svg>
+                    <svg alt="JavaScript" title="JavaScript"  fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="5151e0c8492e5103c096af88a51e75c7"> 
+                        <path display="inline" fill-rule="evenodd" clip-rule="evenodd" d="M1.008,0.5C0.438,0.583,0.48,1.27,0.521,1.958 c0,169.668,0,339.31,0,508.974c169.364,1.135,340.808,0.162,510.979,0.486c0-170.309,0-340.61,0-510.918 C341.342,0.5,171.167,0.5,1.008,0.5z M259.893,452.167c-11.822,11.919-30.478,18.938-53.429,18.938 c-37.643,0-58.543-18.34-71.884-43.711c12.842-8.2,25.966-16.122,39.344-23.795c5.456,15.262,23.886,32.42,44.683,21.857 c13.183-6.699,11.661-27.01,11.661-49.054c0-45.773,0-98.578,0-139.872c-0.042-0.688-0.083-1.375,0.482-1.458 c15.707,0,31.413,0,47.116,0c0,36.788,0,78.402,0,117.529C277.866,395.199,280.91,430.988,259.893,452.167z M470.696,409.917 c-2.674,39.884-35.243,61.063-79.17,61.188c-43.062,0.124-70.624-19.013-87.433-48.567c12.085-8.317,25.778-15.017,38.375-22.822 c10.08,15.761,27.537,30.91,53.429,28.652c16.131-1.406,34.856-14.555,24.285-34.482c-5.127-9.66-17.516-14.567-28.656-19.425 c-35.352-15.424-76.828-29.571-72.861-84.992c1.327-18.514,9.852-31.525,20.889-40.796c11.311-9.5,26.46-15.867,46.629-16.511 c36.629-1.173,56.723,15.12,70.429,37.884c-11.664,8.891-24.514,16.608-37.401,24.281c-4.229-12.995-24.644-25.658-41.772-17.969 c-7.789,3.493-14.788,13.761-10.684,26.224c3.66,11.115,18.589,17.199,30.599,22.344 C433.706,340.486,474.331,355.693,470.696,409.917z"> 
+                        </path> 
+                            </g> 
+                            </g>
+                    </svg>
+                    <svg alt="Node.js" title="Node.js"  fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="5151e0c8492e5103c096af88a51f0aa3"> 
+                        <path display="inline" fill-rule="evenodd" clip-rule="evenodd" d="M115.889,151.885l-24.053-13.773 c-1.512-0.891-2.451-2.499-2.451-4.244v-29.306c0-1.745-0.928-3.364-2.443-4.232l-10.239-5.899 c-0.742-0.444-1.601-0.662-2.432-0.662c-0.854,0-1.689,0.218-2.451,0.662l-10.246,5.899c-1.516,0.869-2.44,2.488-2.44,4.232v29.306 c0,1.745-0.928,3.342-2.446,4.244l-24.061,13.773c-0.747,0.458-1.675,0.458-2.429,0c-0.766-0.421-1.22-1.234-1.22-2.107 l-0.089-62.733c0-1.759,0.938-3.375,2.447-4.247L71.819,59.5c0.695-0.403,1.46-0.61,2.232-0.643c0.06,0,0.352,0,0.422,0 c0.776,0.033,1.541,0.24,2.229,0.643l40.48,23.299c1.52,0.873,2.443,2.488,2.443,4.247l-0.078,62.733 c0,0.873-0.469,1.686-1.216,2.107C117.586,152.344,116.643,152.344,115.889,151.885z M271.617,135.07V88.317 c0-1.748,0.932-3.36,2.443-4.232l40.503-23.373c1.508-0.873,3.371-0.876,4.887-0.004l10.136,5.844c0.532,0.307,1.187,0.307,1.715,0 c0.525-0.307,0.854-0.872,0.854-1.482V2.943c0-0.869,0.459-1.667,1.205-2.11c0.751-0.437,1.675-0.444,2.433-0.022l24.098,13.448 c1.552,0.861,2.51,2.499,2.51,4.27V135.07c0,1.749-0.932,3.36-2.447,4.236l-40.502,23.388c-1.512,0.88-3.379,0.88-4.895,0 l-40.495-23.388C272.549,138.43,271.617,136.818,271.617,135.07z M301.781,119.711c0,0.436,0.232,0.839,0.609,1.057l13.906,8.014 c0.377,0.214,0.843,0.214,1.22,0l13.906-8.014c0.377-0.218,0.609-0.621,0.609-1.057v-16.058c0-0.436-0.232-0.843-0.609-1.057 l-13.902-8.033c-0.381-0.218-0.847-0.218-1.228,0l-13.906,8.033c-0.373,0.214-0.605,0.621-0.605,1.057V119.711z M480.675,83.449 l-40.235-23.365c-1.513-0.88-3.383-0.883-4.898-0.004l-40.487,23.369c-1.512,0.873-2.443,2.488-2.443,4.236v46.738 c0,1.759,0.946,3.378,2.47,4.251l40.232,22.921c1.481,0.851,3.304,0.854,4.794,0.03L464.44,148.1 c0.772-0.433,1.253-1.242,1.257-2.122c0.007-0.88-0.462-1.697-1.228-2.137l-40.738-23.384c-0.758-0.436-1.228-1.246-1.228-2.122 v-14.645c0-0.873,0.466-1.682,1.224-2.122l12.679-7.312c0.754-0.433,1.686-0.433,2.439,0l12.687,7.312 c0.758,0.44,1.224,1.25,1.224,2.122v11.525c0,0.873,0.469,1.682,1.227,2.118c0.758,0.433,1.689,0.433,2.447-0.004l24.245-14.095 c1.512-0.876,2.437-2.487,2.437-4.232V87.678C483.111,85.933,482.187,84.321,480.675,83.449z M152.783,138.441l40.48,23.387 c1.516,0.873,3.378,0.873,4.894,0l40.495-23.387c1.512-0.876,2.443-2.488,2.443-4.236V87.434c0-1.745-0.932-3.364-2.447-4.236 l-40.491-23.365c-1.516-0.876-3.378-0.876-4.891,0l-40.483,23.365c-1.516,0.873-2.447,2.492-2.447,4.236v46.771 C150.336,135.954,151.268,137.565,152.783,138.441z M393.945,246.323l-124.834-72.14c-7.833-4.465-18.338-4.465-26.237,0 l-124.838,72.14c-8.088,4.658-13.093,13.396-13.093,22.755v144.073c0,9.353,5.005,18.102,13.093,22.767l32.732,18.856 c15.861,7.807,21.547,7.807,28.759,7.807c23.477,0,36.968-14.202,36.968-38.969V281.373c0-2.012-1.641-3.597-3.618-3.597h-15.832 c-2.011,0-3.626,1.585-3.626,3.597v142.239c0,10.979-11.363,21.905-29.916,12.639l-34.199-19.769 c-1.205-0.654-1.971-1.948-1.971-3.331V269.078c0-1.367,0.766-2.728,1.978-3.423l124.764-72.015c1.156-0.673,2.694-0.673,3.844,0 l124.79,71.996c1.193,0.714,1.937,2.029,1.937,3.441v144.073c0,1.383-0.743,2.706-1.907,3.371l-124.841,72.06 c-1.068,0.65-2.706,0.65-3.867,0l-32.022-19.015c-0.953-0.547-2.173-0.754-3.098-0.229c-8.864,5.031-10.542,5.692-18.845,8.576 c-2.055,0.717-5.09,1.948,1.128,5.419l41.682,24.663c3.992,2.313,8.535,3.504,13.093,3.504c4.624,0,9.152-1.19,13.145-3.504 l124.834-72.078c8.084-4.705,13.114-13.414,13.114-22.767V269.078C407.06,259.719,402.029,250.999,393.945,246.323z M299.448,399.408c-37.253,0-45.448-9.359-48.194-27.886c-0.318-1.978-2.012-3.453-4.044-3.453h-18.202 c-2.255,0-4.065,1.804-4.065,4.07c0,23.705,12.904,51.983,74.506,51.983c44.605,0,70.182-17.559,70.182-48.231 c0-30.415-20.553-38.503-63.809-44.232c-43.719-5.785-48.161-8.768-48.161-19.007c0-8.436,3.763-19.717,36.144-19.717 c28.918,0,39.578,6.231,43.962,25.716c0.385,1.837,2.056,3.176,3.948,3.176h18.271c1.135,0,2.211-0.488,2.979-1.294 c0.772-0.854,1.183-1.967,1.075-3.135c-2.827-33.579-25.143-49.226-70.236-49.226c-40.14,0-64.078,16.94-64.078,45.333 c0,30.813,23.819,39.334,62.333,43.134c46.092,4.525,49.67,11.256,49.67,20.327C341.729,392.703,329.105,399.408,299.448,399.408z M438.328,101.044c-0.288-0.17-0.646-0.17-0.935,0l-7.767,4.484c-0.292,0.167-0.47,0.477-0.47,0.81v8.979 c0,0.333,0.178,0.644,0.47,0.81l7.767,4.484c0.288,0.167,0.646,0.167,0.935,0l7.773-4.484c0.293-0.166,0.47-0.477,0.47-0.81v-8.979 c0-0.333-0.177-0.643-0.47-0.81L438.328,101.044z"> 
+                        </path> 
+                            </g> 
+                            </g>
+                    </svg>
+                    <svg alt="MongoDB" title="MongoDB"  fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="3e91140ac1bfb9903b91c1b0ca092167"> 
+                        <path display="inline" d="M370.993,247.505c-1.48-91.949-49.777-167.927-99.326-215.637C255.912,16.697,253.369,0.5,253.369,0.5 s0.337,7.121-7.841,15.684c-34.38,35.998-56.228,55.032-77.107,100.632c-25.995,56.77-27.444,131.995-27.444,131.995 s1.383,61.921,27.444,112.393c20.175,39.073,55.718,71.011,69.799,82.729c1.295-4.417,3.78-13.374,5.479-22.498 c2.634-14.159,3.817-29.218,3.828-29.367c0.262-3.36,3.036-5.972,6.406-6.03c0.038,0,0.075,0,0.112,0 c3.323,0,6.124,2.495,6.494,5.81c0.024,0.225,2.569,22.693,7.498,36.416c2.499,6.962,6.952,9.295,7.144,9.391 c1.81,0.74,3.011,2.179,3.585,4.05c0.033,0.092,0.046,0.188,0.066,0.283C292.389,430.842,372.798,359.955,370.993,247.505z M234.685,376.032c-2.333,3.726-3.799,8.009-4.15,12.533c-0.008,0.108-0.41,5.194-1.254,12.061 c-13.187-13.832-27.639-31.538-37.705-51.033c-22.441-43.465-24.874-97.274-25.063-102.668 c0.185-6.144,2.718-73.333,25.502-123.092c12.625-27.573,25.662-44.573,42.67-62.991V376.032z M272.341,443.541 c0,0-4.321,6.509-5.228,14.372c-2.283,19.795-2.611,53.587-2.611,53.587l-13.071-3.922c0,0-0.355-22.265-2.616-39.206 c-1.503-11.278-5.227-19.607-5.227-19.607s4.055-12.8,6.535-26.137c2.734-14.691,3.919-30.058,3.919-30.058 s2.59,23.268,7.844,37.901C265.441,440.381,272.341,443.541,272.341,443.541z"> 
+                        </path> 
+                            </g> 
+                            </g>
+                    </svg>
+                    <!-- Aquí agregaré más iconos de los lenguajes aprendidos -->
+            </div>
+
+                <!-- HABILIDADES -->
+            <section id="habilidades" class="seccion-habilidades animar-scroll">
+            <h2 data-i18n="Habilidades"></h2>
+            <p data-i18n="HabilidadesParrafo"></p>
+
+            <ul class="lista-habilidades">
+                <li class="Sonido" data-i18n="listaHabilidades1"></li>
+                <li class="Sonido" data-i18n="listaHabilidades2"></li>
+                <li class="Sonido" data-i18n="listaHabilidades3"></li>
+                <li class="Sonido" data-i18n="listaHabilidades4"></li>
+                <li class="Sonido" data-i18n="listaHabilidades5"></li>
+                <li class="Sonido" data-i18n="listaHabilidades6"></li>
+                <li class="Sonido" data-i18n="listaHabilidades7"></li>
+            </ul>
+            </section>
+
+
+                <!-- PROYECTOS EXITOSOS -->
+            <section id="proyectos" class="animar-scroll seccion-proyectos">
+            <h2 data-i18n="ProyectosExitosos">🚀 Proyectos exitosos</h2>
+            <p data-i18n="ParrafoProyectosExitosos">Estos son algunos de los desarrollos en los que he trabajado y que han generado impacto real.</p>
+
+                <div class="proyecto-card animar-scroll">
+                    <div class="proyecto-cabecera">
+                        <h3 data-i18n="proyectoTitulo1">💼 Instalaciones García’s</h3>
+                        <span class="proyecto-etiqueta">#Node.js</span>
+                    </div>
+
+                    <p data-i18n="proyectoDescripcion1">App web para gestionar técnicos, proyectos y reportes internos.</p>
+
+                <ul class="proyecto-detalles">
+                    <li data-i18n="proyectoItem1_1">✅ CRUD de técnicos y clientes</li>
+                    <li data-i18n="proyectoItem1_2">✅ Notificaciones automáticas</li>
+                    <li data-i18n="proyectoItem1_3">✅ Paneles de control responsivos</li>
+                </ul>
+
+                <div class="proyecto-footer">
+                    <a data-i18n="proyectoBtnVerMas" href="#" class="btn-ver-mas">Ver más</a>
+                    <!-- Opcional: demo link -->
+                    <!-- <a href="https://proyecto-demo.com" target="_blank" class="btn-demo">Demo</a> -->
+                </div>
+            </div>
+            </section>
+
+            <!-- EXPERIENCIA -->
+            <section id="experiencia" class="animar-scroll seccion-experiencia">
+            <h2 data-i18n="experienciaTitulo">📂 Experiencia</h2>
+            <p data-i18n="experienciaParrafo">Un vistazo a los entornos donde he aplicado mis conocimientos como desarrollador.</p>
+
+            <!-- Aqui se agregara despues las experiencias -->
+
+                <div class="Experiencias-Listado">
+                    <article class="Experiencia animar-elemento">
+                        <h2>💼 Experiencia 1 – Formación Académica y Práctica Universitaria</h2>
+                        <p> Durante 2 años he desarrollado habilidades sólidas en lógica de programación avanzada a través de la universidad.  He resuelto ejercicios complejos utilizando estructuras condicionales, ciclos y algoritmos estructurados con diagramas de flujo. Entregué proyectos técnicos que reforzaron mi pensamiento lógico y capacidad para abstraer problemas. Esta etapa formó mi disciplina, mi atención al detalle y mis primeros pasos en el desarrollo backend. Cada reto académico fue una oportunidad de entrenar mi capacidad de análisis. La experiencia universitaria ha sido un eje fundamental para la construcción de mi perfil como programador profesional.</p>
+                    </article>
+                    <article class="Experiencia animar-elemento">
+                        <h2>🔧 Experiencia 2 – Curso Privado Full Stack & Backend Master</h2>
+                        <p> Durante 1 año intensivo participé en un curso privado enfocado en programación Full Stack y backend profesional. Desarrollé una gran variedad de sitios web, sistemas avanzados y aplicaciones dinámicas. Resolví desafíos de lógica, estructuras complejas y bases de datos a gran escala. Trabajé en proyectos exigentes, tanto en frontend como en backend, aplicando buenas prácticas y patrones de arquitectura. Recibí recomendaciones destacadas por la calidad de mi código, compromiso y crecimiento constante. Esta etapa consolidó mi visión profesional y mi capacidad de llevar soluciones de principio a fin.</p>
+                    </article>
+                    <article class="Experiencia animar-elemento">
+                        <h2>🌐 Experiencia 3 – Inglés Intermedio-Alto con Fluidez Conversacional</h2>
+                        <p> Poseo un dominio del inglés en nivel intermedio-alto, con fluidez verbal y técnica. He estudiado el idioma durante varios años mediante cursos online, prácticas activas y contenido profesional. Sigo perfeccionando mis habilidades lingüísticas, enfocándome en vocabulario técnico, documentación y comunicación efectiva. Este conocimiento me permite colaborar en entornos bilingües y seguir aprendiendo recursos de desarrollo global. Hablo inglés con soltura tanto en contextos informales como técnicos.</p>
+                    </article>
+                    <article class="Experiencia animar-elemento">
+                        <h2>🛠️ Experiencia 4 – Desarrollo de Aplicación Web para “Instalaciones García’s”</h2>
+                        <p>Participé en el diseño y desarrollo de una aplicación web personalizada para Instalaciones García’s, empresa de soluciones en drywall. El sistema fue creado pensando en la comodidad del cliente y la operatividad del equipo interno. Incorporé funcionalidades intuitivas, buena experiencia de usuario y estructura escalable. Esta experiencia me permitió aplicar soluciones reales a necesidades empresariales concretas. Fue un paso clave para llevar mis conocimientos a un entorno profesional directo y funcional.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- CONTACTO -->
+            <section  id="contacto" class="seccion-contacto animar-scroll">
+            <h2 data-i18n="contactoTitulo">📫 Contacto</h2>
+            <p data-i18n="contactoParrafo">¿Tienes un proyecto o idea que quieres construir? ¡Hablemos!</p>
+
+            <form action="https://formspree.io/f/your-form-id" method="POST" class="formulario-contacto" id="form-contacto">
+                <input type="text" name="name" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="Tu correo" required>
+                <textarea name="message" placeholder="Tu mensaje" rows="5" required></textarea>
+                <button data-i18n="contactoBoton" type="submit">Enviar mensaje</button>
+
+
+                <div data-i18n="mensajeEnviado" id="mensaje-envio" class="mensaje-confirmacion">✅ ¡Mensaje enviado con éxito!</div>
+            </form>
+            </section>
+
+            <a data-i18n="btnConoceme"" href="#sobreMi" class="btn-scroll">Conóceme más ↓</a>
+        </div>
+    </header>
+</Section>
+
+<script src="Portafolio.js"></script>
+
+</body>
+</html>
