@@ -52,7 +52,7 @@
         <div class="hero-content">
             <div id="sobreMi">
             <h1 data-i18n="saludo"></h1>
-            <img src="https://media.licdn.com/dms/image/v2/D4D03AQEIczU-cTKBfw/profile-displayphoto-shrink_800_800/B4DZdM4reiGUAg-/0/1749341616748?e=1756944000&v=beta&t=Rg65DtV8QRS_YAX4bwUfhd0gJPOlLjLZ-R3ZOZMVlqY" alt="Foto de Gabo" class="pulso">
+            <img src="https://media.licdn.com/dms/image/v2/D4D03AQGSQ5OSzFp_Aw/profile-displayphoto-scale_400_400/B4DZfGUECZHAAg-/0/1751378838169?e=1756944000&v=beta&t=FNVxoiWt-Dvm3z4rfjZeo__kY8CErTayncGw8-hUKpg" alt="Foto de Gabo" class="pulso">
             <h2 data-i18n="sobreMiPrincipal"></h2>
             <h3 data-i18n="sobreMi"></h3>
             <p data-i18n="descripcionSobreMi"></p>
@@ -231,19 +231,27 @@
             </section>
 
             <!-- CONTACTO -->
-            <section  id="contacto" class="seccion-contacto animar-scroll">
-            <h2 data-i18n="contactoTitulo">📫 Contacto</h2>
-            <p data-i18n="contactoParrafo">¿Tienes un proyecto o idea que quieres construir? ¡Hablemos!</p>
+            <section id="contacto" class="seccion-contacto animar-scroll">
+                <h2 data-i18n="contactoTitulo">📬 Hablemos</h2>
+                <p data-i18n="contactoParrafo">
+                    ¿Tienes un proyecto que te emociona? Estoy listo para ayudarte a hacerlo realidad.
+                </p>
 
-            <form action="https://formspree.io/f/your-form-id" method="POST" class="formulario-contacto" id="form-contacto">
-                <input type="text" name="name" placeholder="Tu nombre" required>
-                <input type="email" name="email" placeholder="Tu correo" required>
-                <textarea name="message" placeholder="Tu mensaje" rows="5" required></textarea>
-                <button data-i18n="contactoBoton" type="submit">Enviar mensaje</button>
-
-
-                <div data-i18n="mensajeEnviado" id="mensaje-envio" class="mensaje-confirmacion">✅ ¡Mensaje enviado con éxito!</div>
-            </form>
+                <form action="https://formspree.io/f/movwrorr" method="POST" class="formulario-contacto" id="form-contacto">
+                    <div class="campo">
+                        <input type="text" name="name" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="campo">
+                        <input type="email" name="email" placeholder="Tu correo" required>
+                    </div>
+                    <div class="campo">
+                        <textarea name="message" placeholder="Cuéntame tu idea..." rows="5" required></textarea>
+                    </div>
+                    <button data-i18n="contactoBoton" type="submit">🚀 Enviar</button>
+                    <div data-i18n="mensajeEnviado" id="mensaje-envio" class="mensaje-confirmacion">
+                        ✅ ¡Tu mensaje está en camino!
+                    </div>
+                </form>
             </section>
 
             <a data-i18n="btnConoceme"" href="#sobreMi" class="btn-scroll">Conóceme más ↓</a>
@@ -252,6 +260,10 @@
 </Section>
 
 <script src="Portafolio.js"></script>
+
+<footer class="footer">
+    <p>© 2025 Gabriel González — Desarrollador Web Full Stack</p>
+</footer>
 
 </body>
 </html>

@@ -531,67 +531,100 @@ body.dark-theme .click-feedback {
 }
 
 .seccion-contacto {
+    background: linear-gradient(to top, #0f172a, #1e293b);
+    padding: 80px 20px;
     text-align: center;
+    color: #f1f5f9;
+}
+
+.seccion-contacto h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.seccion-contacto p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #cbd5e1;
+    animation: fadeInUp 1s ease-out;
 }
 
 .formulario-contacto {
-    max-width: 500px;
-    margin: 2rem auto;
+    max-width: 600px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.2rem;
 }
 
-.formulario-contacto input,
-.formulario-contacto textarea {
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 1.2rem;
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #1e293b;
+    color: #f1f5f9;
+    box-shadow: 0 0 0 1px #334155;
+    transition: box-shadow 0.3s ease;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #38bdf8;
 }
 
 .formulario-contacto button {
     background-color: #38bdf8;
-    color: #fff;
+    color: #0f172a;
+    padding: 0.9rem;
     border: none;
-    padding: 0.75rem;
-    border-radius: 6px;
-    font-weight: bold;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: transform 0.2s ease, background-color 0.3s ease;
 }
 
 .formulario-contacto button:hover {
     background-color: #0ea5e9;
-}
-
-.animar-scroll {
-    transform: translateY(40px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.animar-scroll.visible {
-    opacity: 1;
-    transform: translateY(0);
+    transform: scale(1.05);
 }
 
 .mensaje-confirmacion {
     display: none;
     margin-top: 1rem;
-    font-size: 1.2rem;
-    color: #0f172a;
+    font-size: 1rem;
     background-color: rgba(56, 189, 248, 0.2);
-    border-left: 5px solid #38bdf8;
+    color: #38bdf8;
+    border-left: 4px solid #38bdf8;
     padding: 0.75rem 1rem;
     border-radius: 6px;
-    opacity: 0;
-    transition: opacity 0.4s ease;
+    animation: aparecer 0.4s ease-in-out forwards;
 }
 
-body.dark-theme .mensaje-confirmacion {
-    color: #e0e0e0;
-    background-color: rgba(166, 45, 77, 0.2);
-    border-left-color: #A62D4D;
+/* Animación de entrada */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 #loader-terminal {
@@ -926,6 +959,27 @@ body.dark-theme .Experiencia {
 body.light-theme .notificacion {
     background-color: rgba(255, 255, 255, 0.95);
     color: #222;
+}
+
+.footer {
+    background-color: #111;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+    opacity: 0;
+    animation: aparecerFooter 1.5s ease-in forwards;
+}
+
+@keyframes aparecerFooter {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Responsive para pantallas pequeñas */

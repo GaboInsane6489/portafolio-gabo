@@ -233,12 +233,22 @@ function validarFormulario() {
 
     formulario.addEventListener("submit", (e) => {
         e.preventDefault();
-        mensaje.style.display = "block";
-        mensaje.style.opacity = "0";
 
-    setTimeout(() => {
-        mensaje.style.opacity = "1";
-    }, 100);
+        const datos = new FormData(formulario);
+        fetch(formulario.action, {
+        method: "POST",
+            body: datos,
+            headers: {
+                Accept: "application/json"
+            }
+        })
+        .then(() => {
+            mensaje.style.display = "block";
+            mensaje.style.opacity = "0";
+
+        setTimeout(() => {
+            mensaje.style.opacity = "1";
+        }, 100);
 
         setTimeout(() => {
             mensaje.style.opacity = "0";
@@ -247,6 +257,10 @@ function validarFormulario() {
                 formulario.reset();
             }, 500);
         }, 3500);
+    })
+        .catch(() => {
+            alert("Hubo un error al enviar. Por favor, intenta más tarde.");
+        });
     });
 }
 
