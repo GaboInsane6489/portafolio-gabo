@@ -72,3 +72,5 @@ Soy **Gabriel González**, desarrollador web con pasión por la interactividad, 
 ## 📜 Licencia
 
 MIT License © Gabriel González
+
+📌 [Mirá el Roadmap de mejoras del sitio](./ROADMAP.md)
