@@ -13,6 +13,7 @@ body {
     line-height: 1.6;
     scroll-behavior: smooth;
     transition: background-color 0.4s ease, color 0.4s ease;
+    overflow-x: hidden;
 }
 
 body.tema-transicion * {
@@ -985,55 +986,96 @@ body.light-theme .notificacion {
 /* Responsive para pantallas pequeñas */
 @media (max-width: 768px) {
     /* NAVBAR */
-    .nav-menu {
+    .navbar {
         flex-direction: column;
-        gap: 1rem;
-        padding: 1.5rem;
+        padding: 0.8rem 1rem;
         align-items: center;
+        text-align: center;
     }
 
     .navbar h1 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
     }
 
-    /* HERO o portada */
-    .hero {
-        flex-direction: column;
+    .nav-menu {
+        display: grid;
+        grid-template-columns: repeat(3, 2fr); /* 2 columnas */
+        gap: 0.7rem;
+        padding: 0.5rem;
+        justify-items: center;
+        font-size: 1rem; /* Aumentamos un poco el tamaño */
+    }
+
+    /* Si usas botones o íconos en el nav */
+    .nav-menu a {
+        font-size: 1.05rem;
+        padding: 0.4rem 0.6rem
+    }
+
+    /* General reset de padding si abarca mucho */
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        padding: 1rem 0.5rem;
+    }
+
+    .top-controls {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+        margin: 1rem 0;
+    }
+
+    .top-controls .control-btn {
+        font-size: 0.95rem;
+        padding: 0.4rem 0.8rem;
+        width: fit-content;
+    }
+
+    .notificaciones-container {
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        right: auto;
+        transform: none;
+        max-width: 90vw;
+        margin: 0.2rem auto;
+        font-size: 0.2rem;
+        padding: 0.1rem 0.4rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        word-break: break-word;
+        line-height: 0.2;
         text-align: center;
-        gap: 2rem;
+        animation: slideInLeft 0.4s ease-out;
     }
 
-    .hero img {
-        width: 100%;
-        max-width: 300px;
-        margin: 0 auto;
+    @keyframes slideInLeft {
+        from {
+            opacity: 0;
+            transform: translateX(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
     }
 
-    /* SECCIÓN DE CONTACTO */
-    .seccion-contacto {
-        padding: 60px 16px;
+    @media (hover: none) {
+        a:hover,
+        button:hover {
+            transform: none;
+            background: inherit;
+        }
     }
 
-    .formulario-contacto {
-        width: 100%;
-        max-width: 100%;
-        gap: 1rem;
+    button, .click-feedback-brillante {
+        min-height: 44px;
     }
 
-    .formulario-contacto input,
-    .formulario-contacto textarea {
-        font-size: 1rem;
-    }
-
-    /* SVG o ICONOS */
-    svg {
-        width: 32px;
-        height: 32px;
-    }
-
-    /* FOOTER */
-    .footer {
-        font-size: 0.8rem;
-        padding: 20px 10px;
-    }
 }
