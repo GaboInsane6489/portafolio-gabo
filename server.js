@@ -7,3 +7,7 @@ app.use(express.static("public"));
 app.listen(PORT, '0.0.0.0', () => {
     console.log(`🌐 Servidor iniciado en http://localhost:${PORT}`);
 });
+
+app.get("/", (req, res) => {
+    res.sendFile(__dirname + "/public/index.html");
+});
