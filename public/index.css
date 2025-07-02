@@ -186,7 +186,8 @@ body.dark-theme .hero-content img:hover {
 
 /* SECCIONES */
 section {
-    padding: 6rem 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -230,6 +231,7 @@ body.dark-theme .tech-icons svg path {
 
 .tech-icons svg:hover {
     transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
     background-color: rgba(255, 255, 255, 0.2);
     cursor: pointer;
 }
@@ -988,9 +990,10 @@ body.light-theme .notificacion {
     /* NAVBAR */
     .navbar {
         flex-direction: column;
-        padding: 0.8rem 1rem;
+        padding: 0.2rem 0.6rem;
         align-items: center;
         text-align: center;
+        margin-top: 5rem;
     }
 
     .navbar h1 {
@@ -1005,6 +1008,7 @@ body.light-theme .notificacion {
         padding: 0.5rem;
         justify-items: center;
         font-size: 1rem; /* Aumentamos un poco el tamaño */
+        
     }
 
     /* Si usas botones o íconos en el nav */
@@ -1017,10 +1021,33 @@ body.light-theme .notificacion {
     body {
         padding: 0;
         margin: 0;
+        overflow-x: hidden;
+        font-size: 0.85rem;
     }
 
     header {
         padding: 1rem 0.5rem;
+    }
+
+    .hero {
+        padding: 1rem 1rem;
+    }
+
+    .hero-content {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    .hero h1 {
+        padding: 4rem 0 1rem;
+        font-size: 2.2rem;
+    }
+
+    .hero p{
+        font-size: 0.95rem;
+        line-height: 1.6;
     }
 
     .top-controls {
@@ -1028,7 +1055,8 @@ body.light-theme .notificacion {
         justify-content: center;
         flex-wrap: wrap;
         gap: 0.8rem;
-        margin: 1rem 0;
+        margin-top: 1rem;
+        margin-bottom: 1.2rem;
     }
 
     .top-controls .control-btn {
@@ -1039,18 +1067,18 @@ body.light-theme .notificacion {
 
     .notificaciones-container {
         position: fixed;
-        top: 1rem;
+        top: 2rem;
         left: 1rem;
         right: auto;
         transform: none;
         max-width: 90vw;
         margin: 0.2rem auto;
-        font-size: 0.2rem;
+        font-size: 2rem;
+        line-height: 0.6;
         padding: 0.1rem 0.4rem;
         border-radius: 0.5rem;
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         word-break: break-word;
-        line-height: 0.2;
         text-align: center;
         animation: slideInLeft 0.4s ease-out;
     }
@@ -1076,6 +1104,376 @@ body.light-theme .notificacion {
 
     button, .click-feedback-brillante {
         min-height: 44px;
+    }
+
+    .sobreMiPrincipal {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+        flex-wrap: wrap;
+        padding: 0 1rem;
+    }
+
+    .icono-social {
+        font-size: 1.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    /* Si quieres ampliar la zona de toque */
+    .icono-social svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .email-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 2rem;
+        padding: 0 1rem;
+    }
+
+    .email-container .label {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .email-container svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .email-search {
+        width: 100%;
+        max-width: 320px;
+        font-size: 0.95rem;
+        padding: 0.6rem 1rem;
+        text-align: center;
+    }
+
+    .btn-send,
+    .btn-copy {
+        padding: 0.5rem 0.8rem;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .email-options {
+        width: 100%;
+        max-width: 320px;
+        flex-direction: column;
+        gap: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .email-options button {
+        padding: 0.5rem;
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .tech-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.2rem;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+
+    .tech-icons svg {
+        width: 4.5rem;
+        height: 4.5rem;
+        flex-shrink: 0;
+    }
+
+    .proyecto-card {
+        padding: 1rem;
+        margin: 1rem 0.5rem;
+        border-radius: 0.75rem;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .proyecto-cabecera {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .proyecto-card h3 {
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+
+    .proyecto-etiqueta {
+        font-size: 0.9rem;
+        background-color: #f0f0f0;
+        padding: 0.3rem 0.6rem;
+        border-radius: 0.5rem;
+    }
+
+    .proyecto-card p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        margin-top: 0.8rem;
+        text-align: center;
+    }
+
+    .proyecto-detalles {
+        padding-left: 1.2rem;
+        font-size: 0.9rem;
+        margin-top: 1rem;
+    }
+
+    .proyecto-detalles li {
+        margin-bottom: 0.4rem;
+    }
+
+    .proyecto-footer {
+        display: flex;
+        justify-content: center;
+        margin-top: 1.2rem;
+    }
+
+    .btn-ver-mas {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
+        border-radius: 0.5rem;
+    }
+
+    .seccion-habilidades {
+        padding: 2rem 1rem;
+    }
+
+    .seccion-habilidades p {
+        font-size: 0.95rem;
+        text-align: center;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+    }
+
+    .lista-habilidades li {
+        margin-bottom: 0.6rem;
+        line-height: 1.5;
+        font-size: 1.20rem;
+        padding-left: 0rem;
+    }
+
+    .seccion-experiencia {
+        padding: 2rem 1rem;
+    }
+
+    .seccion-experiencia h2 {
+        font-size: 1.4rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .seccion-experiencia p {
+        font-size: 0.95rem;
+        text-align: center;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+    }
+
+    .Experiencias-Listado {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .Experiencia {
+        padding: 1rem;
+        border-radius: 0.6rem;
+        background-color: #f9f9f9;
+        box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+    }
+
+    .Experiencia p {
+        font-size: 1.4rem;
+        line-height: 1.5;
+    }
+
+    .seccion-titulo {
+        font-size: 2rem !important;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 1.5rem 1rem;
+        font-size: 0.9rem;
+        background-color: #f4f4f4; 
+    }
+
+    .footer p {
+        margin: 0;
+        line-height: 1.5;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+    /* 🔹 Texto principal del hero */
+    .hero-content {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    .hero h1 {
+        padding: 4rem 0 1rem;
+        font-size: 2.2rem;
+    }
+
+
+    .hero p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .hero {
+        padding: 1rem;
+    }
+
+
+    /* 🔹 Links de navegación */
+    .nav-menu a {
+        font-size: 0.79rem;
+        padding: 0.1rem 0.3rem;
+    }
+
+    /* 🔹 Controles superiores (idioma y tema) */
+    .top-controls .control-btn {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.7rem;
+    }
+
+    /* 🔹 Notificaciones ajustadas */
+    .notificaciones-container {
+        top: 0.5rem;
+        left: 0.5rem;
+        font-size: 0.85rem;
+        padding: 0.5rem 0.8rem;
+        max-width: 85vw;
+    }
+
+    /* 🔹 Footer compacto */
+    footer {
+        padding: 1rem 0.5rem;
+        font-size: 0.85rem;
+        text-align: center;
+    }
+
+    /* 🔹 Evita desbordes laterales */
+    body {
+        overflow-x: hidden;
+        font-size: 0.95rem;
+    }
+
+    .sobreMiPrincipal {
+        font-size: 0.67rem;
+        line-height: 1.5;
+    }
+
+    .social-icons {
+        gap: 1rem;
+    }
+
+    .icono-social {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .proyecto-card {
+        padding: 0.9rem;
+        margin: 1rem 0.5rem;
+        border-radius: 0.6rem;
+        box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+    }
+
+    .proyecto-cabecera h3 {
+        font-size: 1.05rem;
+        text-align: center;
+        line-height: 1.3;
+    }
+
+    .proyecto-etiqueta {
+        font-size: 0.85rem;
+        padding: 0.3rem 0.5rem;
+        text-align: center;
+    }
+
+    .proyecto-card p {
+        font-size: 0.87rem;
+        line-height: 1.5;
+        margin-top: 0.6rem;
+        text-align: center;
+    }
+
+    .proyecto-detalles {
+        padding-left: 1rem;
+        font-size: 0.85rem;
+        margin-top: 0.8rem;
+    }
+
+    .proyecto-footer {
+        margin-top: 1rem;
+        justify-content: center;
+    }
+
+    .btn-ver-mas {
+        font-size: 0.85rem;
+        padding: 0.5rem 1rem;
+        border-radius: 0.45rem;
+    }
+
+    .seccion-habilidades p {
+        font-size: 0.87rem;
+    }
+
+    .lista-habilidades {
+        font-size: 0.87rem;
+        padding-left: 0rem;
+    }
+
+    .lista-habilidades li {
+        margin-bottom: 0.5rem;
+    }
+
+    .seccion-experiencia p {
+        font-size: 0.87rem;
+    }
+
+    .Experiencia p {
+        font-size: 0.85rem;
+    }
+
+    .seccion-titulo {
+        font-size: 1.4rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .footer {
+        font-size: 0.85rem;
     }
 
 }
