@@ -25,9 +25,9 @@ const traducciones = {
         ParrafoProyectosExitosos: "Estos son algunos de los desarrollos en los que he trabajado y que han generado impacto real.",
         proyectoTitulo1: "💼 Instalaciones García’s",
         proyectoDescripcion1: "App web para gestionar técnicos, proyectos y reportes internos.",
-        proyectoItem1_1: "✅ CRUD de técnicos y clientes",
-        proyectoItem1_2: "✅ Notificaciones automáticas",
-        proyectoItem1_3: "✅ Paneles de control responsivos",
+        proyectoItem1_1: "CRUD de técnicos y clientes",
+        proyectoItem1_2: "Notificaciones automáticas",
+        proyectoItem1_3: "Paneles de control responsivos",
         proyectoBtnVerMas: "Ver más",
 
         experienciaTitulo: "📂 Experiencia",
@@ -67,9 +67,9 @@ const traducciones = {
         ParrafoProyectosExitosos: "These are some of the developments I've worked on that have had a real impact.",
         proyectoTitulo1: "💼 García’s Installations",
         proyectoDescripcion1: "Web app to manage technicians, projects, and internal reports.",
-        proyectoItem1_1: "✅ Technician and client CRUD",
-        proyectoItem1_2: "✅ Automated notifications",
-        proyectoItem1_3: "✅ Responsive dashboards",
+        proyectoItem1_1: "Technician and client CRUD",
+        proyectoItem1_2: "Automated notifications",
+        proyectoItem1_3: "Responsive dashboards",
         proyectoBtnVerMas: "View more",
 
         experienciaTitulo: "📂 Experience",
@@ -115,18 +115,18 @@ function manejarScrollActivo() {
 
 // ========== IDIOMA: Cambio de idioma ==========
 function cambiarIdioma() {
-  const btnIdioma = document.getElementById("btnIdioma");
-  let idiomaActual = localStorage.getItem("idioma") || "es";
+    const btnIdioma = document.getElementById("btnIdioma");
+    let idiomaActual = localStorage.getItem("idioma") || "es";
 
-  aplicarTraducciones(idiomaActual);
-  actualizarTextoBoton(idiomaActual);
-
-  btnIdioma.addEventListener("click", () => {
-    idiomaActual = idiomaActual === "es" ? "en" : "es";
-    localStorage.setItem("idioma", idiomaActual);
     aplicarTraducciones(idiomaActual);
     actualizarTextoBoton(idiomaActual);
-  });
+
+    btnIdioma.addEventListener("click", () => {
+        idiomaActual = idiomaActual === "es" ? "en" : "es";
+        localStorage.setItem("idioma", idiomaActual);
+        aplicarTraducciones(idiomaActual);
+        actualizarTextoBoton(idiomaActual);
+    });
 }
 
 function aplicarTraducciones(idioma) {
@@ -274,8 +274,8 @@ function iniciarLoaderTerminal() {
             loader.style.opacity = "0";
             setTimeout(() => {
                 loader.style.display = "none";
-            }, 800);
-        }, 3500);
+            }, 600);
+        }, 2500);
     });
 }
 
@@ -498,7 +498,7 @@ function iniciarInteracciones() {
 
         const efecto = boton.dataset.efecto || "click-feedback";
         boton.classList.add(efecto);
-        setTimeout(() => boton.classList.remove(efecto), 200);
+        setTimeout(() => boton.classList.remove(efecto), 100);
     }
 
     // 🎯 Aplica animación de clic a botones clave
@@ -635,7 +635,7 @@ function animacionHabilidadesOlaConSonido() {
                     setTimeout(() => {
                         sonido.currentTime = 0;
                         sonido.play().catch(() => {}); // Silencia si el autoplay está bloqueado
-                    }, index * 200); // 200ms entre cada elemento
+                    }, index * 100); // 100ms entre cada elemento
                 });
 
                 // 🔒 Anima la sección solo una vez
@@ -673,7 +673,7 @@ window.addEventListener("scroll", () => {
 });
 
 // 💬 Sistema de notificaciones flotantes con animación y sonido suave
-function crearNotificacion(mensaje, duracion = 6000, sonido = true) {
+function crearNotificacion(mensaje, duracion = 3000, sonido = true) {
     const contenedor = document.getElementById("notificaciones");
     if (!contenedor) {
         console.warn("No se encontró el contenedor de notificaciones.");
