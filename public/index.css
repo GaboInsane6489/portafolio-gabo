@@ -10,7 +10,6 @@ body {
     font-family: 'Ubuntu', sans-serif;
     background-color: #0F8BA5;
     color: #1c1c1c;
-    line-height: 1.6;
     scroll-behavior: smooth;
     transition: background-color 0.4s ease, color 0.4s ease;
     overflow-x: hidden;
@@ -98,7 +97,6 @@ body.dark-theme .hero-content img:hover {
     color: var(--nav-text-color); /* Se adapta al tema */
     text-decoration: none;
     font-weight: 500;
-    font-size: 1.5rem;
     padding: 0.5rem 0.75rem;
     border-radius: 4px;
     transition: background 0.3s ease, color 0.3s ease;
@@ -144,7 +142,6 @@ body.dark-theme .hero-content img:hover {
 }
 
 .hero-content h1 {
-    font-size: 3.2rem;
     margin-bottom: 1rem;
     padding-top: 8%;
     padding-left: 25%;
@@ -152,20 +149,17 @@ body.dark-theme .hero-content img:hover {
 }
 
 .hero-content h2 {
-    font-size: 2.5rem;
     padding-top: 2rem;
     margin-bottom: 1rem;
 }
 
 .hero-content h3{
-    font-size: 2rem;
     padding-bottom: 1rem;
 }
 
 .hero-content p {
     max-width: 600px;
     margin: 0 auto 1.5rem;
-    font-size: 1.5rem;
 }
 
 /* BOTONES */
@@ -291,7 +285,6 @@ body.dark-theme .tech-icons svg:hover {
 
 /* 💎 ESTILOS VISUALES GENERALES de los <li> (bloques de habilidad) */
 .lista-habilidades li {
-    font-size: 1.4rem;
     padding: 1.2rem;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.06);
@@ -309,14 +302,8 @@ body.dark-theme .tech-icons svg:hover {
     box-shadow: 0 8px 16px rgba(0,0,0,0.15);
 }
 
-/* 🎯 TÍTULO DE LA SECCIÓN */
-.seccion-habilidades h2 {
-    font-size: 3rem;
-}
-
 /* 📄 PÁRRAFO DE INTRODUCCIÓN */
 .seccion-habilidades p {
-    font-size: 1.8rem;
     padding-bottom: 3rem;
 }
 
@@ -393,14 +380,12 @@ html.dark {
 }
 
 .proyecto-cabecera h3 {
-    font-size: 2.5rem;
     color: var(--card-title);
 }
 
 .proyecto-etiqueta {
     background-color: var(--tag-bg);
     color: var(--tag-color);
-    font-size: 0.8rem;
     padding: 0.3rem 0.6rem;
     border-radius: 6px;
     font-weight: 600;
@@ -408,7 +393,6 @@ html.dark {
 
 .proyecto-card p {
     color: var(--card-text);
-    font-size: 1.75rem;
 }
 
 .proyecto-footer {
@@ -449,7 +433,6 @@ html.dark {
     border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 0.6rem 1rem;
     border-radius: 30px;
-    font-size: 1.45rem;
     font-weight: 500;
     cursor: pointer;
     backdrop-filter: blur(6px);
@@ -534,13 +517,11 @@ body.dark-theme .click-feedback {
 }
 
 .seccion-contacto h2 {
-    font-size: 2.2rem;
     margin-bottom: 0.5rem;
     animation: fadeInUp 0.8s ease-out;
 }
 
 .seccion-contacto p {
-    font-size: 1.1rem;
     margin-bottom: 2rem;
     color: #cbd5e1;
     animation: fadeInUp 1s ease-out;
@@ -558,7 +539,6 @@ body.dark-theme .click-feedback {
 .campo textarea {
     width: 100%;
     padding: 1rem;
-    font-size: 1rem;
     border: none;
     border-radius: 8px;
     background-color: #1e293b;
@@ -580,7 +560,6 @@ body.dark-theme .click-feedback {
     border: none;
     border-radius: 8px;
     font-weight: 600;
-    font-size: 1rem;
     cursor: pointer;
     transition: transform 0.2s ease, background-color 0.3s ease;
 }
@@ -593,7 +572,6 @@ body.dark-theme .click-feedback {
 .mensaje-confirmacion {
     display: none;
     margin-top: 1rem;
-    font-size: 1rem;
     background-color: rgba(56, 189, 248, 0.2);
     color: #38bdf8;
     border-left: 4px solid #38bdf8;
@@ -716,7 +694,6 @@ input.email-search {
     border: none;
     outline: none;
     width: 60%;
-    font-size: 1rem;
     background-color: var(--bg-input);
     box-shadow: var(--shadow-input);
     color: var(--text-input);
@@ -906,8 +883,6 @@ html.dark .email-options {
     border: 1px solid rgba(255, 255, 255, 0.15);
     padding: 2rem;
     border-radius: 15px;
-    font-size: 1.8rem;
-    line-height: 1.6;
     opacity: 0;
     transform: translateY(40px);
     transition: opacity 1.5s ease, transform 1.5s ease;
@@ -964,7 +939,6 @@ body.light-theme .notificacion {
     color: #ccc;
     text-align: center;
     padding: 20px;
-    font-size: 2rem;
     opacity: 0;
     animation: aparecerFooter 1.5s ease-in forwards;
 }
@@ -986,7 +960,6 @@ body.light-theme .notificacion {
     body {
         padding-left: 2.5rem;
         padding-right: 2.5rem;
-        font-size: 1rem;
     }
 
     section,
@@ -1005,40 +978,19 @@ body.light-theme .notificacion {
         padding-right: 1rem;
     }
 
-    .seccion-titulo {
-        font-size: 1.5rem;
-        line-height: 1.4;
-        margin-bottom: 1.25rem;
-    }
-
-    .hero-section h1 {
-        font-size: 2.2rem;
-    }
 
     .hero-section p {
-        font-size: 1.2rem;
         max-width: 850px;
         margin: 0 auto;
     }
 
     .btn, button {
-        font-size: 1rem;
         padding: 0.75rem 1.25rem;
     }
 
-    .Experiencia p,
-    .experiencia-item p {
-        font-size: 1rem;
-        line-height: 1.6;
-    }
 
     .lista-habilidades li {
-        font-size: 1rem;
         padding: 1rem;
-    }
-
-    .lista-habilidades li i {
-        font-size: 1.8rem;
     }
 }
 
@@ -1048,7 +1000,6 @@ body.light-theme .notificacion {
     body {
         padding-left: 2rem;
         padding-right: 2rem;
-        font-size: 1rem;
     }
 
     section,
@@ -1067,41 +1018,24 @@ body.light-theme .notificacion {
         padding-right: 1rem;
     }
 
-    .seccion-titulo {
-        font-size: 1.6rem;
-        line-height: 1.4;
-        margin-bottom: 1.25rem;
-    }
-
-    .hero-section h1 {
-        font-size: 2.2rem;
-    }
-
     .hero-section p {
-        font-size: 1.2rem;
         max-width: 800px;
         margin: 0 auto;
     }
 
     .btn, button {
-        font-size: 1rem;
         padding: 0.75rem 1.25rem;
     }
 
     .Experiencia p,
     .experiencia-item p {
-        font-size: 1rem;
         line-height: 1.6;
     }
 
     .lista-habilidades li {
-        font-size: 1rem;
         padding: 1rem;
     }
 
-    .lista-habilidades li i {
-        font-size: 1.8rem;
-    }
 }
 
 
@@ -1127,13 +1061,10 @@ body.light-theme .notificacion {
         gap: 0.7rem;
         padding: 0.5rem;
         justify-items: center;
-        font-size: 1rem; /* Aumentamos un poco el tamaño */
-        
     }
 
     /* Si usas botones o íconos en el nav */
     .nav-menu a {
-        font-size: 1.05rem;
         padding: 0.4rem 0.6rem
     }
 
@@ -1163,12 +1094,6 @@ body.light-theme .notificacion {
 
     .hero h1 {
         padding: 4rem 0 1rem;
-        font-size: 2.2rem;
-    }
-
-    .hero p{
-        font-size: 0.95rem;
-        line-height: 1.6;
     }
 
     .top-controls {
@@ -1181,7 +1106,6 @@ body.light-theme .notificacion {
     }
 
     .top-controls .control-btn {
-        font-size: 0.95rem;
         padding: 0.4rem 0.8rem;
         width: fit-content;
     }
@@ -1227,11 +1151,6 @@ body.light-theme .notificacion {
         min-height: 44px;
     }
 
-    .sobreMiPrincipal {
-        font-size: 0.85rem;
-        line-height: 1.5;
-    }
-
     .social-icons {
         display: flex;
         justify-content: center;
@@ -1242,7 +1161,6 @@ body.light-theme .notificacion {
     }
 
     .icono-social {
-        font-size: 1.5rem;
         width: 2.5rem;
         height: 2.5rem;
     }
@@ -1277,7 +1195,6 @@ body.light-theme .notificacion {
     .email-search {
         width: 100%;
         max-width: 320px;
-        font-size: 0.95rem;
         padding: 0.6rem 1rem;
         text-align: center;
     }
@@ -1285,7 +1202,6 @@ body.light-theme .notificacion {
     .btn-send,
     .btn-copy {
         padding: 0.5rem 0.8rem;
-        font-size: 1rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1302,7 +1218,6 @@ body.light-theme .notificacion {
     .email-options button {
         padding: 0.5rem;
         width: 100%;
-        font-size: 0.9rem;
     }
 
     .tech-icons {
@@ -1335,28 +1250,19 @@ body.light-theme .notificacion {
         text-align: center;
     }
 
-    .proyecto-card h3 {
-        font-size: 1.2rem;
-        line-height: 1.4;
-    }
-
     .proyecto-etiqueta {
-        font-size: 0.9rem;
         background-color: #f0f0f0;
         padding: 0.3rem 0.6rem;
         border-radius: 0.5rem;
     }
 
     .proyecto-card p {
-        font-size: 0.95rem;
-        line-height: 1.5;
         margin-top: 0.8rem;
         text-align: center;
     }
 
     .proyecto-detalles {
         padding-left: 1.2rem;
-        font-size: 0.9rem;
         margin-top: 1rem;
     }
 
@@ -1371,7 +1277,6 @@ body.light-theme .notificacion {
     }
 
     .btn-ver-mas {
-        font-size: 0.9rem;
         padding: 0.6rem 1.2rem;
         border-radius: 0.5rem;
     }
@@ -1381,16 +1286,12 @@ body.light-theme .notificacion {
     }
 
     .seccion-habilidades p {
-        font-size: 0.95rem;
         text-align: center;
-        line-height: 1.6;
         margin-bottom: 1.5rem;
     }
 
     .lista-habilidades li {
         margin-bottom: 0.6rem;
-        line-height: 1.5;
-        font-size: 1.20rem;
         padding-left: 0rem;
     }
 
@@ -1407,26 +1308,13 @@ body.light-theme .notificacion {
         box-shadow: 0 1px 5px rgba(0,0,0,0.08);
     }
 
-    .Experiencia p {
-        font-size: 1rem;
-        line-height: 1.5;
-    }
-
-    .experiencia .seccion-titulo {
-        font-size: 1.8rem;
-        line-height: 1.3;
-    }
-
-
     .footer {
         text-align: center;
         padding: 1.5rem 1rem;
-        font-size: 0.9rem;
     }
 
     .footer p {
         margin: 0;
-        line-height: 1.5;
     }
 
 }
@@ -1434,7 +1322,6 @@ body.light-theme .notificacion {
 
 @media (max-width: 480px) {
     body {
-        font-size: 0.9rem;
         padding: 0 0.75rem;
     }
 
@@ -1457,28 +1344,20 @@ body.light-theme .notificacion {
         padding: 1rem 0;
     }
 
-    .hero-section h1 {
-        font-size: 1.5rem;
-    }
-
     .hero-section p {
-        font-size: 1rem;
         padding: 0 0.5rem;
     }
 
     .hero-content h2 {
-        font-size: 1.6rem;
         padding-top: 1rem;
         margin-bottom: 0.75rem;
     }
 
     .hero-content h3 {
-        font-size: 1.3rem;
         padding-bottom: 0.75rem;
     }
 
     .hero-content p {
-        font-size: 1rem;
         margin-bottom: 1rem;
         padding: 0 1rem;
     }
@@ -1486,7 +1365,6 @@ body.light-theme .notificacion {
     .btn-contacto,
     .btn-cv {
         width: 100%;
-        font-size: 0.95rem;
         padding: 0.75rem 1rem;
         margin: 0.5rem 0;
         text-align: center;
@@ -1494,7 +1372,6 @@ body.light-theme .notificacion {
 
     .btn, button {
         width: 100%;
-        font-size: 1rem;
         padding: 0.75em 1em;
     }
 
@@ -1518,14 +1395,12 @@ body.light-theme .notificacion {
 
     input, textarea {
         width: 100%;
-        font-size: 1rem;
         padding: 0.75em;
         box-sizing: border-box;
     }
 
     footer {
         text-align: center;
-        font-size: 0.9rem;
         padding: 1rem 0;
     }
 
@@ -1538,13 +1413,11 @@ body.light-theme .notificacion {
 
     .lista-habilidades li {
         text-align: center;
-        font-size: 1rem;
         padding: 0.75rem;
         border-radius: 8px;
     }
 
     .lista-habilidades li i {
-        font-size: 1.6rem;
         margin-bottom: 0.5rem;
     }
 
@@ -1572,21 +1445,12 @@ body.light-theme .notificacion {
     }
 
     .experiencia-item h3 {
-        font-size: 0.6rem;
         margin-bottom: 0.4rem;
     }
 
     .experiencia-item p {
-        font-size: 0.9rem;
-        line-height: 1.4;
         margin: 0 auto;
         max-width: 95%;
-    }
-
-
-    .seccion-titulo {
-        font-size: 0.6rem;
-        line-height: 1.2;
     }
 
 }
@@ -1594,40 +1458,25 @@ body.light-theme .notificacion {
 
 @media (max-width: 430px) {
     body {
-        font-size: 0.85rem;
         padding: 0 0.5rem;
     }
 
     .seccion-titulo {
-        font-size: 0.95rem;
-        line-height: 1.2;
         margin-bottom: 0.5rem;
     }
 
-    .hero-section h1 {
-        font-size: 1.2rem;
-        line-height: 1.3;
-    }
 
     .hero-section p {
-        font-size: 0.9rem;
         padding: 0 0.25rem;
     }
 
     .btn, button {
-        font-size: 0.9rem;
         padding: 0.6em 0.8em;
         width: 100%;
     }
 
     .experiencia-item h3 {
-        font-size: 1rem;
         margin-bottom: 0.4rem;
-    }
-
-    .experiencia-item p {
-        font-size: 0.9rem;
-        line-height: 1.4;
     }
 
     .lista-habilidades {
@@ -1637,20 +1486,16 @@ body.light-theme .notificacion {
     }
 
     .lista-habilidades li {
-        font-size: 0.9rem;
         padding: 0.6rem;
     }
 
     footer {
-        font-size: 0.8rem;
         padding: 0.75rem 0;
     }
 }
 
-
 @media (max-width: 400px) {
     body {
-        font-size: 0.85rem;
         padding: 0 0.5rem;
     }
 
@@ -1666,18 +1511,11 @@ body.light-theme .notificacion {
         padding: 0;
     }
 
-    .hero-section h1 {
-        font-size: 1.2rem;
-        line-height: 1.3;
-    }
-
     .hero-section p {
-        font-size: 0.9rem;
         padding: 0 0.25rem;
     }
 
     .btn, button {
-        font-size: 0.9rem;
         padding: 0.6em 0.8em;
         width: 100%;
     }
@@ -1699,12 +1537,10 @@ body.light-theme .notificacion {
     }
 
     input, textarea {
-        font-size: 0.9rem;
         padding: 0.6em;
     }
 
     footer {
-        font-size: 0.8rem;
         padding: 0.75rem 0;
     }
 
@@ -1717,13 +1553,11 @@ body.light-theme .notificacion {
     }
 
     .habilidad-item {
-        font-size: 0.9rem;
         padding: 0.6rem;
         border-radius: 8px;
     }
 
     .habilidad-item i, .habilidad-item svg {
-        font-size: 1.4rem;
         margin-bottom: 0.4rem;
     }
 
@@ -1735,13 +1569,11 @@ body.light-theme .notificacion {
 
     .lista-habilidades li {
         text-align: center;
-        font-size: 0.9rem;
         padding: 0.6rem;
         border-radius: 8px;
     }
 
     .lista-habilidades li i {
-        font-size: 1.4rem;
         margin-bottom: 0.4rem;
     }
 
@@ -1759,13 +1591,7 @@ body.light-theme .notificacion {
     }
 
     .experiencia-item h3 {
-        font-size: 1rem;
         margin-bottom: 0.4rem;
-    }
-
-    .experiencia-item p {
-        font-size: 0.9rem;
-        line-height: 1.4;
     }
 
     .Experiencias-Listado {
@@ -1777,8 +1603,6 @@ body.light-theme .notificacion {
     }
 
     .seccion-titulo {
-        font-size: 1.5rem !important;
-        line-height: 1.2;
         margin-bottom: 0.5rem;
     }
 }
@@ -1791,8 +1615,6 @@ body.light-theme .notificacion {
     }
 
     .seccion-titulo {
-        font-size: 0.65rem;
-        line-height: 1.3;
         text-align: center;
         margin-bottom: 0.5rem;
         word-break: break-word;
@@ -1804,8 +1626,6 @@ body.light-theme .notificacion {
     }
 
     .lista-habilidades li {
-        font-size: 0.85rem;
-        line-height: 1.4;
         margin-bottom: 0.5rem;
         padding: 0.5rem;
         word-break: break-word;
@@ -1813,7 +1633,6 @@ body.light-theme .notificacion {
 
     .lista-habilidades li i,
     .lista-habilidades li svg {
-        font-size: 1.2rem;
         margin-bottom: 0.3rem;
     }
 
@@ -1823,44 +1642,28 @@ body.light-theme .notificacion {
     }
 
     .Experiencia p {
-        font-size: 0.8rem;
-        line-height: 1.4;
         text-align: justify;
     }
 
     .footer {
-        font-size: 0.75rem;
         padding: 0.75rem 0.5rem;
-    }
-
-    .navbar h1 {
-        font-size: 0.9rem;
     }
 
     .nav-menu {
         grid-template-columns: repeat(2, 1fr);
-        font-size: 0.85rem;
         gap: 0.4rem;
     }
 
     .nav-menu a {
         padding: 0.25rem 0.4rem;
-        font-size: 0.85rem;
     }
 
     .btn, button {
-        font-size: 0.85rem;
         padding: 0.5em 0.75em;
         width: 100%;
     }
 
-    .hero-section h1 {
-        font-size: 1.1rem;
-        line-height: 1.3;
-    }
-
     .hero-section p {
-        font-size: 0.85rem;
         padding: 0 0.25rem;
     }
 }
